@@ -54,6 +54,7 @@
 - [ ] Ruby Compiler 
 
 - [x] Physical keyboard
+- [ ] Respects Material Design Guidelines 
 
 
 ### Supported Languages
