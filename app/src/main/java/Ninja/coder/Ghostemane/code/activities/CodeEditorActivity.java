@@ -795,7 +795,7 @@ public class CodeEditorActivity extends AppCompatActivity {
         progressbar1.getIndeterminateDrawable().setColorFilter(0xFFFFB689, PorterDuff.Mode.SRC_IN);
       }
     }
-    AnimUtils.ClickAnimation(image);
+  AnimUtils.ClickAnimation(image);
     if (mthemepost.getString("mytheme", "").equals("true")) {
       EdgeToEdge.enable(this);
     } else {
@@ -870,7 +870,7 @@ public class CodeEditorActivity extends AppCompatActivity {
                             public void onColorSelected(int selectedColor) {}
                           })
                       .setPositiveButton(
-                          "انتخاب",
+                          "Select",
                           new ColorPickerClickListener() {
                             @Override
                             public void onClick(
@@ -885,7 +885,7 @@ public class CodeEditorActivity extends AppCompatActivity {
                             }
                           })
                       .setNegativeButton(
-                          "لغو",
+                          "Cancel",
                           new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -1037,11 +1037,11 @@ public class CodeEditorActivity extends AppCompatActivity {
     }
   }
 
-  public void _Anim(final View setCodeEditorFileReader) {
+ /* public void _Anim(final View setCodeEditorFileReader) {
     android.view.animation.Animation animation = new android.view.animation.AlphaAnimation(0, 1);
     animation.setDuration(300);
     setCodeEditorFileReader.setAnimation(animation);
-  }
+  }*/
 
   public void _Bounce(final View _view) {
     AnimUtils.Bounce(_view);
@@ -1059,14 +1059,14 @@ public class CodeEditorActivity extends AppCompatActivity {
     AnimUtils.Amin04(_view, this);
   }
 
-  public void ClickItemChildAnimation(View view) {
+  /*public void ClickItemChildAnimation(View view) {
     var fade_in =
         new ScaleAnimation(
             0.9f, 1f, 0.9f, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.7f);
     fade_in.setDuration(300);
     fade_in.setFillAfter(true);
     view.startAnimation(fade_in);
-  }
+  }*/
 
   public void ReloadFileInPos() {
     if (shp.contains("path")) {
