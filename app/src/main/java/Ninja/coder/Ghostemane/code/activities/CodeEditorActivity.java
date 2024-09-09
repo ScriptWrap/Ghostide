@@ -1059,14 +1059,14 @@ public class CodeEditorActivity extends AppCompatActivity {
     AnimUtils.Amin04(_view, this);
   }
 
-  /*public void ClickItemChildAnimation(View view) {
+  public void ClickItemChildAnimation(View view) {
     var fade_in =
         new ScaleAnimation(
             0.9f, 1f, 0.9f, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.7f);
     fade_in.setDuration(300);
     fade_in.setFillAfter(true);
     view.startAnimation(fade_in);
-  }*/
+  
 
   public void ReloadFileInPos() {
     if (shp.contains("path")) {
